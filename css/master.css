@@ -1,0 +1,606 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+             /*Start Header  */
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 40px 20px 0px 40px;
+}
+
+
+
+.header h2{
+    color: #333333;
+}
+
+
+.header .links ul{
+    list-style: none;
+    display: flex;
+}
+
+@media (max-width:767px) {
+    .header .links ul{
+        display: none;
+    }  
+}
+
+.header .links ul li a{
+    text-decoration: none;
+    color: gray;
+    font-weight: bold;
+    font-size: 16px; 
+    padding: 0px 20px ;
+    transition: 0.3s;
+}
+
+.header .links  a:hover{
+    color: #333333;
+} 
+ 
+ /* End of Header */
+
+
+ 
+ /* Start of Main Page */
+
+.mainpage .boxs{
+    width: 90% ;
+    height: 700PX;
+    background-image: linear-gradient( to right, rgba(44, 56, 85, 0.9), rgba(100, 125, 187, 0.1) ), 
+    url(../Img/landing.jpg);   
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 25px; 
+    margin: 50px auto;
+    position: relative;
+}
+
+.mainpage .information{
+    color: white;
+    position: absolute;
+    left: 5%;
+    top: 20%;
+}
+
+@media (max-width:767px) {
+    .mainpage .information{
+        top: 40%;
+        left: 10%;
+    }  
+}
+
+.mainpage .boxs h1{
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+.mainpage .boxs p{
+    font-size: 16px;
+    margin-top: 10px;
+
+}
+
+
+
+.mainpage .book{
+    width: 88%;
+    background-color: #ffffffad;
+    border-radius: 20px;
+    position: absolute;
+    top: 93%;
+    left:6%;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    position: relative;
+}
+
+@media (max-width:800px) {
+    .mainpage .book{
+        display: flex;
+        flex-direction: column;
+        top: 60%;
+    }  
+}
+
+
+.mainpage .book .one{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+
+.mainpage .book .one input{
+    background: none;
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 5px;
+    outline: none;
+    position: relative;
+}
+
+.mainpage .book .one label{
+    position: absolute;
+    font-size: 18px;
+    color:#333333;
+    transition: 0.3s;
+}
+
+.mainpage .book .one input:focus +label{
+    font-size: 14px;
+    margin-top: -10px;
+}
+
+.mainpage .book .one span{
+    font-size: 14px;
+    color: gray;
+    padding: 5px 0;
+}
+
+
+/* .mainpage .book .qes{
+    font-size: 14px;
+    color: gray;
+    padding: 5px 0;
+} */
+
+/* @media (max-width:800px) {
+    .mainpage .book .qes{
+        padding-bottom: 10px;
+    }  
+} */
+
+/* .mainpage .book .address{
+    margin-top: -7px;
+    width: 200px;
+    font-size: 20px;
+    color: #000000b8;
+    border-bottom: 1px solid black;
+    padding: 5px 0;
+} */
+
+/* @media (max-width:800px) {
+    .mainpage .book .address{
+        width: 550px;
+        font-size: 18px;
+    }  
+}
+
+@media (max-width:767px) {
+    .mainpage .book .address{
+        width: 150px;
+        font-size: 18px;
+    }  
+}
+
+@media (max-width:375px) {
+    .mainpage .book .address{
+        width: 400px;
+        font-size: 18px;
+    }  
+} */
+
+.mainpage .book .SearchIcon{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #2c3855;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    transition: 0.5s;
+}
+
+.mainpage .book .SearchIcon:hover{
+    background-color: #41568b;
+}
+
+/* End Of Main Page */
+
+
+
+
+
+/* Start of Popular Hotel Section */
+
+
+
+.popularHotels{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 90%;
+    margin: 150px auto;
+}
+
+.popularHotels h2{
+    text-align: center;
+    font-size: 34px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.holels{
+    display: grid;
+    grid-template-columns: repeat(3 , auto); 
+    gap: 20px; 
+}
+
+@media (max-width:1200px) {
+    .holels{
+        grid-template-columns: repeat(2 , auto);
+    }  
+}
+
+@media (max-width:800px) {
+    .holels{
+        grid-template-columns: repeat(1 , auto);
+    }  
+}
+
+.hotel{
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 12px 1px #000000a3;
+    overflow: hidden;
+    padding: 0px 0 10px;
+}
+
+.box:hover{
+    transition: 0.3s;
+    filter:brightness(110%);
+}
+
+
+
+.hotel img{
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+
+.data{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+}
+
+
+
+.hotel .data span{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.hotel .place{
+    padding: 10px;
+    font-size: 15px;
+    color: #00000069;
+}
+
+
+/* End of Popular Hotel Section */
+
+
+
+/* Start of Client Review Section  */
+
+
+.clientReview{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f3f4f6; 
+    padding: 35px 0 1px ;
+}
+
+
+.clientReview h2{
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    color: #333333;
+}
+
+
+.review{
+    width: 90%;
+    margin: 70px auto;
+    display: grid;
+    grid-template-columns: repeat(3 , auto); 
+    gap: 20px;   
+}
+
+@media (max-width:1200px) {
+    .review{
+        grid-template-columns: repeat(2 , auto); 
+        row-gap: 60px;
+    }  
+}
+@media (max-width: 800px) {
+    .review{
+        grid-template-columns: repeat(1 ,auto); 
+    }  
+}
+
+
+.rev{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 12px 1px #0000007a;
+    height: 170px;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    position: relative;
+}
+
+
+.rev img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: 50%; 
+    transform:translateX(-50%) ;
+    border: 5px solid #eee;
+    transition: 0.5s;
+    border: 3px solid white;
+    outline: 5px solid #f3f4f6;
+}
+
+
+
+.rev img:hover{
+    margin-top: -15px;
+}
+
+.rev p{
+    text-align: center;
+    font-size: 18px;
+    padding: 10px;
+}
+
+/* End of Client Review Section  */
+
+
+
+/* Start of Rewards section */
+
+.Rewards{
+    width: 90%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 12px 1px #00000057;
+    margin: 100px auto;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.Rewards h6{
+    text-align: center;
+    font-size: 18px;
+    color: gray;
+}
+
+.Rewards p{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 25px;
+    margin: auto;
+    width: 60%;
+    color: #333333;
+}
+
+.Rewards button{
+    padding: 10px 20px;
+    margin: auto;
+    background-color: #2c3855;
+    color: white;
+    border-radius: 10px;
+    border: 0;
+    font-size: 17px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.Rewards button:hover{
+    background-color: #41568b;
+}
+
+/* End of Rewards section */
+
+
+
+/* Start of Footer */
+
+.footer{
+    height: auto;
+    background-color: #f3f4f6;
+    position: relative;
+}
+
+.footer .flex {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+@media (max-width:767px) {
+    .footer .flex{
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }  
+}
+
+
+.footer h3{
+    font-size: 24px;
+    color: #333333;
+    padding-top: 35px;
+}
+
+
+@media (max-width: 767px) {
+    .footer h3{
+        text-align: center;
+        padding-bottom: 10px;
+    }  
+}  
+
+
+.footer p{
+    color: gray;
+    padding-top:15px ;
+    display: flex;
+    justify-content: space-between; 
+}
+
+@media (max-width: 767px) {
+    .footer p{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }  
+} 
+
+.WDM p{
+    width: 450px;
+    line-height: 25px;
+}
+@media (max-width: 800px) {
+    .WDM p{
+        width: 230px;
+    }  
+}
+
+@media (max-width: 767px) {
+    .WDM p{
+        width: auto;
+        padding: 0 35px;
+        text-align: center;
+    }  
+}
+
+
+.copyright{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+
+.footer .social1 a{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: white;
+    display:inline-flex;
+    justify-content: center;
+    align-items: center; 
+    text-decoration: none; 
+    color: #000;
+    transition: 0.3s;
+}
+
+
+.footer .social1:hover a:hover{
+    background-color:#333333;
+    cursor: pointer;
+    color: white;
+}  
+
+
+.footer::after{
+    content:"_______________________________________";
+    position: absolute;
+    top: 80%;
+    left: 40%;
+}
+
+@media (max-width:1200px) {
+    .footer::after{
+        left: 30%;
+    }  
+}
+
+@media (max-width:920px) {
+    .footer::after{
+        display: none;
+    }  
+}
+
+/* End Of Footer */
+
+
+
+
+
+
+ /* Toggel menu  */
+
+.icon{
+    position: absolute;
+    left: 90%;
+    font-size: 20px;
+    display: none;
+}
+
+@media (max-width:767px) {
+    .icon{
+        display: block;
+    }  
+}
+
+
+
+.header .toggle-menu{
+    font-size: 22px;
+    position: absolute;
+    left: 88%;
+}
+
+@media (min-width:768px){
+    .header .toggle-menu{
+        display: none;
+    }
+}
+
+@media (max-width:767px) {
+    .header .links ul{
+        display: none;
+        padding: 50px;
+    }  
+
+    .header .toggle-menu:hover + .links ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 10px 15px;
+        position: absolute;
+        top: 100%;
+        left: 0%;
+        background-color: #333333a1;
+        width: 100%;
+        height: 230px;
+        z-index: 1;
+    }
+
+    .header .links ul li a{
+        color: white;
+    }
+}
+
